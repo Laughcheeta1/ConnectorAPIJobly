@@ -25,7 +25,6 @@ const createNewService = (service) => {
     return axios.post(`${route}/create_service`, service);
 }
 
-
 const getServicesByEmployer = (employer_id) => {
     return axios.get(`${route}/get_all_employer/${employer_id}`);
 
@@ -42,3 +41,14 @@ const deleteService = (service_id) => {
 const getPostulations = (service_id) => {
     return axios.get(`${route}/${service_id}/postulations`);
 }
+
+export default {
+    getAllServices,
+    postulateForService,
+    getServiceForProvider,
+    createNewService,
+    getServicesByEmployer,
+    getServiceForEmployers,
+    deleteService,
+    getPostulations
+};
