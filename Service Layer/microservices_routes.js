@@ -1,5 +1,5 @@
-const user_microservices = "API/users";
-const contract_microservices = "API/service";
+const user_microservices = "";
+const contract_microservices = "";
 
 export default {
     user_microservices,

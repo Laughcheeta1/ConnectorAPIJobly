@@ -1,4 +1,4 @@
-const app = require('express')();
+const { app } = require('./app')();
 const PORT = 8080;
 
 app.listen (
