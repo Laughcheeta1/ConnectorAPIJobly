@@ -1,8 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-const { services_microservice } = require('./Service Layer/services_microservice');
-const { users_microservice } = require('./Service Layer/users_microservice');
+const services_microservice = require('./ControllerLayer/service_microservice.js');
+const users_microservice = require('./ControllerLayer/user_microservice.js');
 
 const availableMicroservices = ['', ''];
 
